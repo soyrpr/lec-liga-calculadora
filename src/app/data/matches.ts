@@ -8,7 +8,7 @@ export const matches: Match[] = [
   { week: 1, teamA: 'VIT', teamB: 'GX', winner: 'VIT', gamesTeamA: 2, gamesTeamB: 0 },
   { week: 1, teamA: 'MKOI', teamB: 'KC', winner: 'KC', gamesTeamA: 1, gamesTeamB: 2 },
   { week: 1, teamA: 'BDS', teamB: 'RGE', winner: 'BDS', gamesTeamA: 2, gamesTeamB: 1 },
-  { week: 1, teamA: 'FNC', teamB: 'SK', winner: 'FNC', gamesTeamA: 2, gamesTeamB: 0 },
+  { week: 1, teamA: 'FNC', teamB: 'SK', winner: 'SK', gamesTeamA: 0, gamesTeamB: 2 },
 
   // Week 2
   { week: 2, teamA: 'RGE', teamB: 'VIT', winner: 'RGE', gamesTeamA: 2, gamesTeamB: 0 },
@@ -34,7 +34,7 @@ export const matches: Match[] = [
   { week: 4, teamA: 'TH', teamB: 'VIT', winner: 'TH', gamesTeamA: 2, gamesTeamB: 0 },
   { week: 4, teamA: 'G2', teamB: 'BDS', winner: 'BDS', gamesTeamA: 0, gamesTeamB: 2 },
   { week: 4, teamA: 'SK', teamB: 'RGE', winner: 'RGE', gamesTeamA: 1, gamesTeamB: 2 },
-  { week: 4, teamA: 'MKOI', teamB: 'VIT', winner: 'MKOI', gamesTeamA: 2, gamesTeamB: 0 },
+  { week: 4, teamA: 'MKOI', teamB: 'VIT', winner: 'VIT', gamesTeamA: 0, gamesTeamB: 2 },
 
   // Week 5
   { week: 5, teamA: 'G2', teamB: 'GX', winner: 'GX', gamesTeamA: 1, gamesTeamB: 2 },

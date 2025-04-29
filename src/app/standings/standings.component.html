@@ -1,0 +1,35 @@
+<p-table [value]="standings">
+  <ng-template pTemplate="header">
+    <tr>
+      <th>Pos</th>
+      <th>Equipo</th>
+      <th>Series (W-L)</th>
+      <th>Winrate Series</th>
+      <th>Streak</th>
+      <th>Games (W-L)</th>
+      <th>Winrate Games</th>
+      <th>SoV</th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-team let-i="rowIndex">
+    <tr>
+      <td>{{ i + 1 }}</td>
+      <td>{{ team.teamName }}</td>
+      <td>{{ team.seriesWins }}-{{ team.seriesLoss }}</td>
+      <td>{{ team.seriesWinsRate }}%</td>
+      <td>
+        <span
+          [ngClass]="{
+            'text-green-500': team.seriesStreak > 0,
+            'text-red-500': team.seriesStreak < 0
+          }"
+        >
+          {{ team.seriesStreak > 0 ? 'W' + team.seriesStreak : 'L' + abs(team.seriesStreak) }}
+        </span>
+      </td>
+      <td>{{ team.gamesWins }}-{{ team.gamesLoss }}</td>
+      <td>{{ team.gamesWinsRate }}%</td>
+      <td>{{ team.strengthOfVictory }}</td>
+    </tr>
+  </ng-template>
+</p-table>

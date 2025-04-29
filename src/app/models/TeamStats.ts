@@ -11,6 +11,6 @@ export interface TeamStats {
 
   winterSplitPlacement: number;
 
-  headToHead: Record<string, number>;
+  headToHead: { [opponent: string]: number };
   strengthOfVictory: number;
 }
