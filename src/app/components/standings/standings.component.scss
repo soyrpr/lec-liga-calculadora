@@ -1,0 +1,10 @@
+/* Posiciones aseguradas */
+.locked-first { background-color: #004d00 !important; color: white; }
+.locked-top4  { background-color: #1a661a !important; color: white; }
+.locked-top6  { background-color: #666600 !important; color: white; }
+.eliminated   { background-color: #990000 !important; color: white; }
+
+/* Posiciones actuales sin asegurar */
+.top4 { background-color: #ccffcc !important; }
+.top6 { background-color: #ffffcc !important; }
+.rest { background-color: #ffcccc !important; }

@@ -7,7 +7,7 @@ import { Injectable } from '@angular/core';
 export class StandingsCalculatorService {
   private teamStatsMap: Map<string, TeamStats> = new Map();
 
-  calculateStandings(matches: Match[]): TeamStats[] {
+  calculateStandings(matches: Match[], scenarios: string[][]): TeamStats[] {
     this.resetStats();
 
     matches.forEach(match => {
@@ -86,6 +86,7 @@ export class StandingsCalculatorService {
         winterSplitPlacement: 0,
         headToHead: {},
         strengthOfVictory: 0,
+        positionProbabilities: []
       });
     }
     return this.teamStatsMap.get(teamName)!;

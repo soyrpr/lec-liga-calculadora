@@ -44,13 +44,13 @@ export const matches: Match[] = [
   { week: 5, teamA: 'TH', teamB: 'SK', winner: 'TH', gamesTeamA: 2, gamesTeamB: 0 },
   { week: 5, teamA: 'VIT', teamB: 'BDS', winner: 'VIT', gamesTeamA: 2, gamesTeamB: 1 },
 
-  // Week 6
-  { week: 6, teamA: 'FNC', teamB: 'BDS' },
-  { week: 6, teamA: 'KC', teamB: 'RGE' },
-  { week: 6, teamA: 'GX', teamB: 'BDS' },
-  { week: 6, teamA: 'G2', teamB: 'VIT' },
-  { week: 6, teamA: 'TH', teamB: 'FNC' },
-  { week: 6, teamA: 'MKOI', teamB: 'SK' },
+  // Week 6 sim mediante bet365
+  { week: 6, teamA: 'FNC', teamB: 'BDS', winner: 'FNC', gamesTeamA: 2, gamesTeamB: 0 },
+  { week: 6, teamA: 'KC', teamB: 'RGE', winner: 'KC', gamesTeamA: 2, gamesTeamB: 0  },
+  { week: 6, teamA: 'GX', teamB: 'BDS', winner: 'GX', gamesTeamA: 2, gamesTeamB:  1 },
+  { week: 6, teamA: 'G2', teamB: 'VIT', winner: 'G2', gamesTeamA: 2, gamesTeamB:  0  },
+  { week: 6, teamA: 'TH', teamB: 'FNC', winner: 'TH', gamesTeamA:2 , gamesTeamB:  1  },
+  { week: 6, teamA: 'MKOI', teamB: 'SK', winner: 'MKOI', gamesTeamA: 2, gamesTeamB:  1  },
 
   // Week 7
   { week: 7, teamA: 'G2', teamB: 'SK' },

@@ -13,4 +13,11 @@ export interface TeamStats {
 
   headToHead: { [opponent: string]: number };
   strengthOfVictory: number;
+  positionProbabilities: number[];
+
+  eliminated?: boolean;
+  lockedFirst?: boolean;
+  lockedTop4?: boolean;
+  lockedPlayoffs?: boolean;
+  lockedTop6?: any;
 }

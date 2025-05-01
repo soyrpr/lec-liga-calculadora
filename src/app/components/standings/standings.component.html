@@ -1,0 +1,26 @@
+<p-table [value]="standings" class="p-datatable-gridlines">
+  <ng-template pTemplate="header">
+    <tr>
+      <th>#</th>
+      <th>Equipo</th>
+      <th>Series</th>
+      <th>Winrate Series</th>
+      <th>Partidas</th>
+      <th>Winrate Partidas</th>
+      <th>SoV</th>
+    </tr>
+  </ng-template>
+
+  <!-- AQUÍ está bien pasar team e i -->
+  <ng-template pTemplate="body" let-team let-i="rowIndex">
+    <tr [ngClass]="getRowClassPrimeNG(team, i)">
+      <td>{{ i + 1 }}</td>
+      <td>{{ team.teamName }}</td>
+      <td>{{ team.seriesWins }} - {{ team.seriesLoss }}</td>
+      <td>{{ team.seriesWinsRate }}%</td>
+      <td>{{ team.gamesWins }} - {{ team.gamesLoss }}</td>
+      <td>{{ team.gamesWinsRate }}%</td>
+      <td>{{ team.strengthOfVictory }}</td>
+    </tr>
+  </ng-template>
+</p-table>

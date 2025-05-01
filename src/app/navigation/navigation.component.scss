@@ -1,0 +1,30 @@
+.team-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #f4f4f5;
+  border-bottom: 1px solid #ddd;
+
+  p-button {
+    ::ng-deep .p-button {
+      background-color: #ffffff;
+      color: #333;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        background-color: #e0e7ff;
+        border-color: #94a3b8;
+        color: #1e40af;
+      }
+
+      &:focus {
+        box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+      }
+    }
+  }
+}

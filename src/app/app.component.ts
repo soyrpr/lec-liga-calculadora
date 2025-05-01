@@ -1,13 +1,16 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { StandingsComponent } from './standings/standings.component';
+import { RouterModule, RouterOutlet } from '@angular/router';
+import { NgFor } from '@angular/common';
+import { teams } from './data/teams';
+import { NavigationComponent } from './navigation/navigation.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, StandingsComponent],
+  imports: [RouterOutlet, RouterModule, NgFor, NavigationComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   title = 'lec-liga-calculadora';
+  teams = teams;
 }

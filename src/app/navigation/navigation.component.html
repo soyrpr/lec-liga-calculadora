@@ -1,0 +1,9 @@
+<!-- navigation.component.html -->
+<div class="team-nav">
+  <p-button [routerLink]="['/standings']">
+    Clasificación
+  </p-button>
+  <p-button *ngFor="let team of teams" [routerLink]="['/teams', team.id]">
+    {{ team.id }}
+  </p-button>
+</div>
